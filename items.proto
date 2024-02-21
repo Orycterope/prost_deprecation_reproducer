@@ -1,0 +1,12 @@
+syntax = "proto3";
+package items;
+
+message Shirt {
+	Color deprecated_color = 1 [deprecated = true];
+}
+
+enum Color {
+    BLUE = 0;
+    RED = 1;
+    GREEN = 2;
+}
